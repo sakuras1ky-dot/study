@@ -1,7 +1,12 @@
 깃허브에서 가져 오기
+cd C:\Users\hang0\.vscode
 git clone https://github.com/sakuras1ky-dot/study.git
 
 깃허브에 저장 하기
->> git add https://github.com/sakuras1ky-dot/study.git
->> git commit -m "add missed files"
->> git push origin main
+1. 
+cd C:\Users\hang0\.vscode\study
+
+2. 
+git add .                                            
+git commit -m "2026-08-17"
+git push
