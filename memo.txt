@@ -1,0 +1,7 @@
+깃허브에서 가져 오기
+git clone https://github.com/sakuras1ky-dot/study.git
+
+깃허브에 저장 하기
+>> git add https://github.com/sakuras1ky-dot/study.git
+>> git commit -m "add missed files"
+>> git push origin main
