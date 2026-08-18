@@ -8,5 +8,5 @@ cd C:\Users\hang0\.vscode\study
 
 2. 
 git add .                                            
-git commit -m "2026-08-17"
+git commit -m "작업 변경사항"
 git push

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* css 초기화 */
 /* 전체 선택자 */
 * {
@@ -6,6 +5,23 @@
     padding: 0;
     box-sizing: border-box;
     /* content box도 있다 */
+}
+
+html {}
+
+body {
+    color: black;
+}
+
+/* 그룹 선택자 */
+ul,
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 /* 클래스 선택자 */
@@ -26,6 +42,14 @@ section {
     max-width: 928px;
     height: 100%;
     background-color: darkorchid;
+    /* inner */
+
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4px 0px 16px;
 }
 
 /* 헤더영역 시작 */
@@ -51,13 +75,20 @@ section {
 
 .nav {
     width: 100%;
-    height: 50%;
+}
+
+.manu-list {
+    /* ul.menu-list */
+    /* Auto layout */
+    display: flex;
+    gap: 24px;
+    background: #948989;
 }
 
 /* 헤더영역 끝 */
 
 /* 메인 영역 시작 */
-main {
+.main {
     width: 100%;
     background-color: #61f982;
 }
@@ -127,134 +158,4 @@ footer {
 /* 클래스 선택자 > 태그(타입) 선택자 */
 /* header {
     background-color: blueviolet;
-=======
-/* css 초기화 */
-/* 전체 선택자 */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* content box도 있다 */
-}
-
-/* 클래스 선택자 */
-.wrap {
-    width: 100%;
-    background-color: aqua;
-}
-
-section {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.inner {
-    width: 100%;
-    max-width: 928px;
-    height: 100%;
-    background-color: darkorchid;
-}
-
-/* 헤더영역 시작 */
-.header {
-    width: 100%;
-    height: 130px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    background-color: #8cbdfe;
-
-    /* Auto layout */
-    display: flex;
-    justify-content: center;
-    /* 세로로 중앙 정렬 */
-    align-items: center;
-    /* 가로로 중앙 정렬 */
-}
-
-.logo {
-    width: 100%;
-    height: 50%;
-}
-
-.nav {
-    width: 100%;
-    height: 50%;
-}
-
-/* 헤더영역 끝 */
-
-/* 메인 영역 시작 */
-main {
-    width: 100%;
-    background-color: #61f982;
-}
-
-.hero {
-    width: 100%;
-    height: 658px;
-    background-color: #db6161;
-}
-
-.keywords {
-    width: 100%;
-    height: 85px;
-    background-color: #bfe995;
-}
-
-.rank {
-    width: 100%;
-    height: 384px;
-    padding-top: 65px;
-    background-color: #61F982;
-}
-
-.festival {
-    width: 100%;
-    height: 507px;
-    padding-top: 65px;
-    background-color: #4b7eff;
-}
-
-.alio {
-    width: 100%;
-    height: 391px;
-    padding-top: 65px;
-    background-color: #fea3fc;
-}
-
-.banner {
-    width: 100%;
-    height: 229px;
-    padding-top: 65px;
-    background-color: #ff7d7d;
-}
-
-.theme {
-    width: 100%;
-    height: 262px;
-    padding-top: 65px;
-    padding-bottom: 80px;
-    background-color: #f9b28c;
-}
-
-/* 메인 영역 끝 */
-
-/* 푸터 영역 시작 */
-footer {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 262px;
-    background-color: #be4af4;
-}
-
-/* 푸터 영역 끝 */
-
-/* 태그(타입) 선택자 */
-/* 클래스 선택자 > 태그(타입) 선택자 */
-/* header {
-    background-color: blueviolet;
->>>>>>> 0da79fa960777855b9ef072fb4691aefa65f86aa
 } */
