@@ -1,12 +1,15 @@
 깃허브에서 가져 오기
-cd C:\Users\hang0\.vscode
+cd C:\Users\hang0\.vscode  (노트북)
+cd C:\Users\user\.vscode   (데스크탑)
+
 git clone https://github.com/sakuras1ky-dot/study.git
 
 깃허브에 저장 하기
 1. 
-cd C:\Users\hang0\.vscode\study
+cd C:\Users\hang0\.vscode\study  (노트북)
+cd C:\Users\user\.vscode\study   (데스크탑)
 
 2. 
 git add .                                            
-git commit -m "작업 변경사항"
+git commit -m update
 git push
