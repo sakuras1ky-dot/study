@@ -7,16 +7,25 @@
     /* content box도 있다 */
 }
 
-html {}
+html {
+    
+}
 
 body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    /* Lorem ipsum dolor sit amet consectetur. Nunc fames odio aenean quis diam commodo tincidunt nam ut. Etiam viverra consectetur scelerisque aliquam lectus nunc nec ultricies quis. Dignissim faucibus odio integer lacus. Et mattis lacus venenatis volutpat augue. */
+    line-height: 160%;
+    letter-spacing: -0.02em;
     color: black;
+    background-color: #fff;
 }
 
 /* 그룹 선택자 */
 ul,
 li {
-    list-style-type: none;
+    list-style: none;
 }
 
 a {
@@ -24,26 +33,28 @@ a {
     color: black;
 }
 
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
 /* 클래스 선택자 */
 .wrap {
-    width: 100%;
-    background-color: aqua;
-}
+    width: 100%;}
 
 section {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: aqua;
 }
 
 .inner {
     width: 100%;
     max-width: 928px;
     height: 100%;
-    background-color: darkorchid;
-    /* inner */
-
+    background-color: #fff;
 
     /* Auto layout */
     display: flex;
@@ -69,20 +80,47 @@ section {
 }
 
 .logo {
+    display: block;
+    width: 139px;
+    height: 24px;
+    /* text-indent: px; */
+    font-size: 0;
+}
+
+.logo {
     width: 100%;
-    height: 50%;
+    object-fit: contain;
 }
 
 .nav {
     width: 100%;
 }
 
-.manu-list {
+
+.menu-list {
     /* ul.menu-list */
     /* Auto layout */
     display: flex;
     gap: 24px;
-    background: #948989;
+    align-items: center;
+    /* background: #948989; */
+}
+
+.menu-list li a {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+}
+
+.home {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../asset/icon/main_black_ico.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-indent: -999px;
 }
 
 /* 헤더영역 끝 */
@@ -90,7 +128,7 @@ section {
 /* 메인 영역 시작 */
 .main {
     width: 100%;
-    background-color: #61f982;
+    background-color: #f9b28c;
 }
 
 .hero {
@@ -145,10 +183,11 @@ section {
 
 /* 푸터 영역 시작 */
 footer {
+    width: 100%;
+    height: 206px;
     display: flex;
     justify-content: center;
-    width: 100%;
-    height: 262px;
+    align-items: center;
     background-color: #be4af4;
 }
 
