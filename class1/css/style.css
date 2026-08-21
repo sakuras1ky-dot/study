@@ -7,12 +7,14 @@
     /* content box도 있다 */
 }
 
+html {}
+
 body {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    /* Lorem ipsum dolor sit amet consectetur. Nunc fames odio aenean quis diam commodo tincidunt nam ut. Etiam viverra consectetur scelerisque aliquam lectus nunc nec ultricies quis. Dignissim faucibus odio integer lacus. Et mattis lacus venenatis volutpat augue. */
     line-height: 160%;
+    /* line-height: 1.6=160%; */
     letter-spacing: -0.02em;
     color: black;
     background-color: #fff;
@@ -26,7 +28,7 @@ li {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #000;
 }
 
 img {
@@ -53,7 +55,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .inner {
@@ -92,6 +94,7 @@ section {
     display: block;
     width: 139px;
     height: 24px;
+    font-size: 0;
     /* text-indent: -999px; */
 }
 
