@@ -60,13 +60,7 @@ section {
     width: 100%;
     max-width: 928px;
     height: 100%;
-    background-color: #fff;
-
-    /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 4px 0px 16px;
+    /* background-color: #fff; */
 }
 
 /* 헤더영역 시작 */
@@ -75,9 +69,9 @@ section {
     height: 130px;
     padding-top: 20px;
     padding-bottom: 10px;
-    background-color: #8cbdfe;
+    /* background-color: #8cbdfe; */
 
-    /* Auto layout */
+    /* figma Auto layout */
     display: flex;
     justify-content: center;
     /* 세로로 중앙 정렬 */
@@ -85,15 +79,23 @@ section {
     /* 가로로 중앙 정렬 */
 }
 
+/*  */
+.header .inner {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4px 0px 8px;
+}
+
 .logo {
     display: block;
     width: 139px;
     height: 24px;
     /* text-indent: -999px; */
-    font-size: 0;
 }
 
-.logo img{
+.logo img {
     width: 100%;
     object-fit: contain;
 }
@@ -109,7 +111,7 @@ section {
     /* ul.menu-list */
     /* Auto layout */
     display: flex;
-    gap: 24px;
+    gap: 40px;
     align-items: center;
     /* background: #948989; */
 }
@@ -123,20 +125,46 @@ section {
 .home {
     display: block;
     width: 24px;
-    /////t: 24px;
-    background-image : url("../asset/icon/main_black_ico.png");
+    height: 24px;
+    background-image: url("../asset/icon/main_black_ico.png");
+    /* background-repeat: repeat-y; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     text-indent: -999px;
+    /* font size: 0; */
 }
 
-.nav-utils {}
+.nav-utils {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 .nav-pick {}
-.main-pick {}
-.main-pick img {}
+
+.main-pick {
+    width: 32px;
+    height: 32px;
+}
+
+.main-pick img {
+    width: 100%;
+    object-fit: contain;
+}
+
 .main-pick-bubble {}
-.main-search {}
+
+.main-search {
+    width: 32px;
+    height: 32px;
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* background-size: contain; */
+    /* background-image: url("../asset/icon/search_btn_bk.png"); */
+    background: url(../asset/icon/search_btn_bk.png) no-repeat center;
+    background-size: contain;
+}
 
 /* 헤더영역 끝 */
 
