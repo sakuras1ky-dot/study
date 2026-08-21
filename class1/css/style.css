@@ -34,9 +34,19 @@ img {
     vertical-align: middle;
 }
 
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
 /* 클래스 선택자 */
+/* 클래스 선택자는 '.'으로 시작 */
 .wrap {
-    width: 100%;}
+    width: 100%;
+}
 
 section {
     width: 100%;
@@ -79,19 +89,21 @@ section {
     display: block;
     width: 139px;
     height: 24px;
-    /* text-indent: px; */
+    /* text-indent: -999px; */
     font-size: 0;
 }
 
-.logo {
+.logo img{
     width: 100%;
     object-fit: contain;
 }
 
 .nav {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
 
 .menu-list {
     /* ul.menu-list */
@@ -111,13 +123,20 @@ section {
 .home {
     display: block;
     width: 24px;
-    height: 24px;
-    background-image: url("../asset/icon/main_black_ico.png");
+    /////t: 24px;
+    background-image : url("../asset/icon/main_black_ico.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     text-indent: -999px;
 }
+
+.nav-utils {}
+.nav-pick {}
+.main-pick {}
+.main-pick img {}
+.main-pick-bubble {}
+.main-search {}
 
 /* 헤더영역 끝 */
 
