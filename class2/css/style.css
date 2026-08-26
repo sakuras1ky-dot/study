@@ -180,12 +180,43 @@ section {
 .hero {
     width: 100%;
     height: 658px;
-    background-color: #db6161;
+    /* background-color: #db6161; */
 }
 
-.main-visual {
+.hero main-visual {
     width: 100%;
     height: 100%;
+    position: relative;
+}
+
+/* .main-visual {
+    position: relative;
+    width: 100%;
+    height: 100%;
+} */
+
+.hero .main-visual::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 20px;
+    display: block;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.hero .main-visual-::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
 }
 
 .hero .main-visual .bg {
@@ -193,7 +224,22 @@ section {
     height: 100%;
     background: url(../asset/imege/slide_1.png) no-repeat center;
     background-size: cover;
+    /* figma - efect -> layer blur */
     filter: blur(3px);
+}
+
+.hero .main-visual::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 123px;
+    display: block;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: url(../asset/imege/bg_wave.png) no-repeat center;
+    background-size: contain;
 }
 
 .keywords {
@@ -254,6 +300,4 @@ footer {
 
 /* 태그(타입) 선택자 */
 /* 클래스 선택자 > 태그(타입) 선택자 */
-/* header {
-    background-color: blueviolet;
-} */
+/* header {background-color: blueviolet;} */
