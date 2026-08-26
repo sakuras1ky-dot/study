@@ -81,7 +81,6 @@ section {
     /* 가로로 중앙 정렬 */
 }
 
-/*  */
 .header .inner {
     /* Auto layout */
     display: flex;
@@ -240,6 +239,73 @@ section {
     z-index: 1;
     background: url(../asset/imege/bg_wave.png) no-repeat center;
     background-size: contain;
+}
+
+/* 슬라이드 영역 */
+. visual-inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    max-width: 1320px;
+    background-color: darkgray;
+}
+
+/* /* swiper 라이브러리로 대체 */
+
+.swiper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 1080px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    items-align: center;
+}
+
+.prev-button {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+}
+
+.prev-button img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+    position: absolute;
+    opacity: 0;
+}
+
+.next-button {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+}
+
+.next-button img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+    position: absolute;
+    oppacity: 0;
+}
+
+.prev-btn .on,
+.next-btn .on {
+    opacity: 1;
+}
+
+.prev-btn .off,
+.next-btn .off {
+    opacity: 0.3;
 }
 
 .keywords {
