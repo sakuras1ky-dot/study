@@ -13,3 +13,5 @@ cd C:\Users\user\.vscode\study   (데스크탑)
 git add .                                            
 git commit -m "2026-08-21"
 git push
+
+***한 주차마다 업데이트***
