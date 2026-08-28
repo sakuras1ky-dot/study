@@ -11,7 +11,7 @@ cd C:\Users\user\.vscode\study   (데스크탑)
 
 2. 
 git add .                                            
-git commit -m "작업 내용 쓰기"
+git commit -m "2026-08-28"
 git push
 
 ***한 주차마다 새 폴더에 업데이트***
