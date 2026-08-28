@@ -236,7 +236,7 @@ section {
 }
 
 /* 슬라이드 영역 */
-. visual-inner {
+.visual-inner {
     position: absolute;
     left: 50%;
     top: 50%;
