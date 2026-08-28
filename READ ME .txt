@@ -35,6 +35,8 @@ git push
 
 변경 이력 커밋하기
 
+reposinory 생성 후
+
 git commit -m "작엽내용 작성"
 
 git에 업로드하기
