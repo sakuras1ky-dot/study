@@ -312,24 +312,65 @@ section {
 
 .location {
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
 }
 
-.location img {}
+.location img {
+    width: 15px;
+    height: 18px;
+    object-fit: contain;
+    /* vertical-align: -2px; */ /* 위치 조금 안맞는거 감안하고 본다 */
+}
 
-.location span {}
+.location span {
+    font-size: 18px;
+    color: #fff;
+    /* letter-spacing: 0; */
+}
 
-.slide-title-head {}
+.slide-title-head {
+    font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+    /* letter-spacing: 0; */
+}
 
 .main-schedule {
     position: relative;
+    margin-bottom: 20px;
 }
 
-.main-schedule span {}
+.main-schedule span {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+}
 
 .explain {
     position: relative;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 20px;
+    border-top: 1px solid #80808a;
 }
 
+.explain li {
+    position: relative;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+}
+
+.explain li::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 1px;
+    background-color: #fff;
+}
 .prev-btn {
     position: relative;
     width: 64px;
