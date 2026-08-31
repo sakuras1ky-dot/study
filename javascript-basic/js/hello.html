@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 맛보기</title>
+</head>
+<body>
+    <h1 class="hello">안녕하세요</h1>
+
+    <!-- js -->
+     <script>
+        // 1. 요소 선택하기
+        const hello = document.querySelector(".hello");
+        console.log(hello);
+
+        // 2. 이벤트 리스너
+        hello.addEventListener("click", function(){
+            console.log("클릭했습니다!");
+
+            hello.textContent = "반갑습니다!";
+        });
+     </script>
+</body>
+</html>
