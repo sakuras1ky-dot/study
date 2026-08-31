@@ -8,7 +8,7 @@ const c = 5.7;
 console.log(typeof c);
 
 // 2. string 문자열
-xonst str1 = "안녕하세요";
+const str1 = "안녕하세요";
 console.log (str1);
 const str2 = "반갑습니다";
 const spc = " ";
