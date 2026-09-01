@@ -32,4 +32,24 @@ console.log(und); // undefined
 // 5. null
 // 유효하지 않은 값
 
-// 6. object
+// 6. object 객체
+//객체는 프로퍼티(속성)와 메소드(기능)으로 구성되어 있다
+// {키: 값, 키: 값, 키:값,...}
+const member = {
+    userid: "kdhong",
+    username: "홍길동",
+    age: 28,
+};
+console.log (member.age); //28
+console.log (member.username); //홍길동
+console.log (member.userid); //kdhong
+
+// 7. array 배열
+const menulist = ["홈", "문화관광축제", "전국축제", "축제달력", "테마"];
+console.log(menulist);
+console.log(menulist[0]);
+console.log(menulist[1]);
+console.log(menulist[2]);
+console.log(menulist[3]);
+console.log(menulist[4]);
+console.log(menulist.length);
