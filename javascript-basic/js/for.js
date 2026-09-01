@@ -16,11 +16,11 @@ for (let i=0; i<=3; i++){
 const member = {
     userid: "kdhong",
     username: "홍길동",
-    age: 30;
+    age: 30
 };
 
 for(let prop in member) {
-    console.log(member.[prop]);
+    console.log(member [prop]);
 }
 // 3. for of
 //배열이나 문자열 같이 반복 가능한 자료창에 있는 요소들을 읽어줄 때
