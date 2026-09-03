@@ -39,17 +39,28 @@ const member = {
     userid: "kdhong",
     username: "홍길동",
     age: 28,
+    // 6.1 메서드란??
+    // 프로퍼티는 객체에 소속된 변수, 객체의 상태를 의미
+    // 메서드는 객체에 소속된 함수, 객체의 동작을 정의
+    // intro: function (){
+    //     return "나의 이름은 " + this.username + "입니다";
+    // },
+    intro () {
+        return "나의 이름은 " + this.username + "입니다";
+    },
 };
 console.log (member.age); //28
 console.log (member.username); //홍길동
 console.log (member.userid); //kdhong
+const introtxt = member.intro()
+console.log(introtxt);
 
 // 7. array 배열
 const menulist = ["홈", "문화관광축제", "전국축제", "축제달력", "테마"];
-console.log(menulist);
-console.log(menulist[0]);
-console.log(menulist[1]);
-console.log(menulist[2]);
-console.log(menulist[3]);
-console.log(menulist[4]);
-console.log(menulist.length);
+// console.log(menulist);
+// console.log(menulist[0]);
+// console.log(menulist[1]);
+// console.log(menulist[2]);
+// console.log(menulist[3]);
+// console.log(menulist[4]);
+// console.log(menulist.length);
