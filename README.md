@@ -32,8 +32,8 @@ git add .
 git commit -m "Today"
 git push
 
-class1= 2026-08-21
+class1= ~2026-08-21
 class2= 2026-28-24-2026-28-28
 class3= 2026-28-31-2026-09-04
 class4= 2026-09-07~2026-09-11
-class5= 
+class5= 2026-09-14~2026-09-18
