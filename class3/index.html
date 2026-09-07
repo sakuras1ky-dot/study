@@ -1,142 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>대한민국 구석구석 클론코딩</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>대한민국 구석구석 클론코딩</title>
+        <!-- pretendard CDN -->
+        <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <!-- <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" /> -->
+        <!-- swiper css CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="css/swiper.css">
+        <!-- 외부 스타일시트 연결 -->
+        <link rel="stylesheet" href="css/style.css">
 
-    <!-- 외부 스타일 시트 연결 -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- pretendard CDN -->
-    <link rel="stylesheet" as="style" crossorigin
-        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
-    <style></style>
-    <!-- rel = relationship을 의미 -->
+        <!-- swiper js CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <!-- JS -->
+        <script src="js/script.js" defer></script>
+        <script src="js/swhero.js" defer></script>
+    </head>
 
-    <!-- swiper css CDN -->
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-/>
-<!-- 외부 스타일시트 연결 -->
-<link rel="stylesheet" href="css/style.css">
-
-<!-- swiper js CDN -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-<!-- JS -->
-<script src="js/script.js" defer></script>
-<script src="js/swhero.js" defer></script>
-</head>
-
-<body>
-    <div class="wrap">
-        <header class="header">
-            <div class="inner">
-                <a href="#" class="logo">
-                    대한민국 구석구석 바로가기
-                    <img src="asset/imege/logo_homelink_bk.png" alt="대한민국 구석구석 바로가기" />
-                </a>
-                <nav class="nav">
-                    <ul class="menu-list">
-                        <li><a href="home">축제 메인</a></li>
-                        <li><a href="#">문화관광축제</a></li>
-                        <li><a href="#">전국축제</a></li>
-                        <li><a href="#">축제달력</a></li>
-                        <li><a href="#">테마</a></li>
-                    </ul>
-                    <div class="nav-utils">
-                        <div class="nav-pick">
-                            <button class="main-pick" aria-label="찜하기 버튼">
-                                <img src="asset/icon/icon_pick_off.png" alt="찜하기 버튼 아이콘" />
-                            </button>
-                            <div class="main-pick-bubble"></div>
+    <body>
+        <div class="wrap">
+            <header class="header">
+                <div class="inner">
+                    <a href="#" class="logo">
+                        대한민국 구석구석 바로가기
+                        <img src="asset/imege/logo_homelink_bk.png" alt="대한민국 구석구석 바로가기" />
+                    </a>
+                    <nav class="nav">
+                        <ul class="menu-list">
+                            <li><a href="home">축제 메인</a></li>
+                            <li><a href="#">문화관광축제</a></li>
+                            <li><a href="#">전국축제</a></li>
+                            <li><a href="#">축제달력</a></li>
+                            <li><a href="#">테마</a></li>
+                        </ul>
+                        <div class="nav-utils">
+                            <div class="nav-pick">
+                                <button class="main-pick" aria-label="찜하기 버튼">
+                                    <img src="asset/icon/icon_pick_off.png" alt="찜하기 버튼 아이콘" />
+                                </button>
+                                <div class="main-pick-bubble"></div>
+                            </div>
+                            <button class="main-search" aria-label="검색버튼"></button>
                         </div>
-                        <button class="main-search" aria-label="검색버튼"></button>
-                    </div>
-                </nav>
-            </div>
-        </header>
-        
-        <main class="main">
-            <section class="hero">
-                <div class="main-visual">
-                    <!-- 슬라이드 영역 배경 -->
-                    <div class="main-visual-bg"></div>
-
-                    <!-- 슬라이드 영역 -->
-                </div class="visual-inner">
-                <!-- swiper-라이브러리로 대체 -->
-
-                <button class="prev-btn">
-                    <img src="asset/imege/pre_on_btn.png" alt="이전 버튼" />
-                    <img class="on" src="asset/imege/btn_pre_off.png" alt="이전 버튼" />
-                </button>
-                <div class="swiper-container">
-                    <div class="swiper-slide">
-                        <a href="#">
-                            <div class="slide-image">
-                                <img src="asset/imege/slide_3.jpg" alt="무주반딧불축제 포스터">
-                            </div>
-                            <div class="info-box">
-                                <div class="slide-title">
-                                    <div class="sort">
-                                        <span class="bage">추천축제</span>
-                                        <!-- span이 뭔지?? -->
-
-                                    </div>
-                                    
-                                    <div class="location">
-                                        <img src="asset/icon/icon_location.png" alt="장소아이콘">
-                                        <span>전북특별자치도 무주군</span>
-                                    </div>
-                                    <h2 class="slide-title-head"></h2>
-                                </div>
-                                <div class="main-schedule">
-                                    <span>2026.09.04 ~ 2026.09.12</span>
-                                </div>
-                                <!-- 이건 뭐지??? -->
-                                <ul class="explein">
-                                    <li>반디의 빛, 세계를 만나다</li>
-                                    <li>반딧불이신비탐사, 반딧불이주제관,반디키즈월드 등</li>
-                                </ul>
-                            </div>
-                        </a>
-                    </div>
+                    </nav>
                 </div>
+            </header>
+        
+            <main class="main">
+                <section class="hero">
+                    <div class="main-visual">
+                        <!-- 슬라이드 영역 배경 -->
+                        <div class="main-visual-bg"></div>
+                        <!-- 슬라이드 영역 -->
+                        </div class="visual-inner">
+                            <!-- swiper-라이브러리로 대체 -->
+                            <div class="swiper sw-hero">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">Slide 1</div>
+                                    <div class="swiper-slide">Slide 2</div>
+                                    <div class="swiper-slide">Slide 3</div>
+                                    <div class="swiper-slide">Slide 4</div>
+                                    <div class="swiper-slide">Slide 5</div>
+                                    <div class="swiper-slide">Slide 6</div>
+                                    <div class="swiper-slide">Slide 7</div>
+                                    <div class="swiper-slide">Slide 8</div>
+                                    <div class="swiper-slide">Slide 9</div>
+                                </div>                        
+                                <div class="swiper-pagination"></div>---
+                            </div>
+                        
+                            <button class="next_btn">
+                                <img src="asset/imege/next_on_btn.png" alt="다음 버튼" />
+                                <img class="on" src="asset/imege/btn_next_off.png" alt="다음 버튼" />                   
+                            </button>
+                            <button class="prev-btn">
+                                <img src="asset/imege/pre_on_btn.png" alt="이전 버튼" />
+                                <img class="on" src="asset/imege/btn_pre_off.png" alt="이전 버튼" />
+                            </button>
 
-                <button class="next_btn" style="position: relative;" >
-                    <img style="position: absolute; right: 50px;" src="asset/imege/next_on_btn.png" alt="다음 버튼" />
-                    <img style="position: absolute; right: 50px;" class="on" src="asset/imege/btn_next_off.png" alt="다음 버튼" />                   
-                </button>
-            </section>
-        </main>
-    </div>
-    </div>
-        </section>
-            <section class="keywords">
-            <div class="inner">축제 키워드 영역</div>
-        </section>
-        <section class="rank">
-            <div class="inner">사람들이 많이 본 축제 영역</div>
-        </section>
-        <section class="festival">
-            <div class="inner">지역 축제 영역</div>
-        </section>
-        <section class="alio">
-            <div class="inner">먹거리 영역</div>
-        </section>
-        <section class="banner">
-            <div class="inner">배너 슬라이드 영역</div>
-        </section>
-        <section class="theme">
-            <div class="inner">테마 축제 영역</div>
-    </section>
-    </main>
-    <footer class="footer">
-        <div class="inner">푸터 영역</div>
-    </footer>
-    </div>
-</body>
+                            <div class="swiper-container">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="slide-image">
+                                            <img src="asset/imege/slide_3.jpg" alt="무주반딧불축제 포스터">
+                                        </div>
+                                        <div class="info-box">
+                                            <div class="slide-title">
+                                                <div class="sort">
+                                                    <span class="bage">추천축제</span>
+                                                </div>
+                                                <div class="location">
+                                                    <img src="asset/icon/icon_location.png" alt="장소아이콘">
+                                                    <span>전북특별자치도 무주군</span>
+                                                </div>
+                                                    <h2 class="slide-title-head"></h2>
+                                                </div>
+                                                <div class="main-schedule">
+                                                    <span>2026.09.04 ~ 2026.09.12</span>
+                                                </div>
+                                                <ul class="explein">
+                                                    <li>반디의 빛, 세계를 만나다</li>
+                                                <li>반딧불이신비탐사, 반딧불이주제관,반디키즈월드 등</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="keywords">
+                    <div class="inner">축제 키워드 영역</div>
+                </section>
+                <section class="rank">
+                    <div class="inner">사람들이 많이 본 축제 영역</div>
+                </section>
+                <section class="festival">
+                    <div class="inner">지역 축제 영역</div>
+                </section>
+                <section class="alio">
+                    <div class="inner">먹거리 영역</div>
+                </section>
+                <section class="banner">
+                    <div class="inner">배너 슬라이드 영역</div>
+                </section>
+                <section class="theme">
+                    <div class="inner">테마 축제 영역</div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <div class="inner">푸터 영역</div>
+            </footer>
+        </div>
+    </body>
 
 </html>
