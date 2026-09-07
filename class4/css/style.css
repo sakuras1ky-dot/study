@@ -182,7 +182,7 @@ section {
     /* background-color: #db6161; */
 }
 
-.hero main-visual {
+.hero .main-visual {
     width: 100%;
     height: 100%;
     position: relative;
@@ -194,38 +194,39 @@ section {
     top: -16px;
     left: 0;
     right: 0;
-    width: 100%;
+    /* width: 100%; */
     height: 20px;
     display: block;
-    background-color: #fff;
+    /* background-color: #fff; */
     z-index: 1;
 }
 
 .hero .main-visual::after {
     content: "";
     position: absolute;
-    width: 100%;
+    /* width: 100%; */
     height: 123px;
     display: block;
     bottom: -10px;
     left: 0;
     right: 0;
     z-index: 1;
-    background: url(../asset/imege/bg_wave.png) no-repeat center;
+    /* background: url(../asset/imege/bg_wave.png) no-repeat center; */
     background-size: contain;
 }
 
 .hero .main-visual .main-visual-bg {
+    position: relative;
     width: 100%;
     height: 100%;
     background: url(../asset/imege/slide_1.png) no-repeat center;
     background-size: cover;
     /* figma - efect -> layer blur */
     filter: blur(3px);
-    transition: background-image: 0.2 ease-in-out;
+    transition: background-image 0.2s ease-in-out;
 }
 
-.hero .main-visual-::after {
+.hero .main-visual .main-visual-bg::after {
     content: "";
     position: absolute;
     left: 0;
@@ -245,11 +246,14 @@ section {
     width: 100%;
     height: 100%;
     max-width: 1320px;
-    background-color: darkgray;
+    /* background-color: darkgray; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* swiper 라이브러리로 대체 */
-.swiper-container {
+.swiper-hero {
     position: relative;
     width: 100%;
     height: 100%;
@@ -265,6 +269,7 @@ section {
 .swiper-slide a {
     display: flex;
     gap: 100px;
+    width: 100%;
 }
 
 .slide-image {
@@ -323,7 +328,7 @@ section {
     width: 15px;
     height: 18px;
     object-fit: contain;
-    /* vertical-align: -2px; */ /* 위치 조금 안맞는거 감안하고 본다 */
+    /* vertical-align: -2px; */ /* 위치 조금 안맞는거 감안하고 본다? */
 }
 
 .location span {
@@ -345,7 +350,6 @@ section {
 }
 
 .main-schedule span {
-    position: relative;
     font-size: 18px;
     color: #fff;
 }
@@ -356,10 +360,12 @@ section {
     gap: 5px;
     padding-top: 20px;
     border-top: 1px solid #80808a;
+    display: flex;
 }
 
 .explain li {
     position: relative;
+    display: flex;
     align-items: center;
     gap: 8px;
     color: #fff;
@@ -379,6 +385,7 @@ section {
     transform: translateY(-50%);
     width: 64px;
     height: 64px;
+    z-index: 10;
 }
 
 .hero-prev-btn img {
@@ -411,15 +418,15 @@ section {
     /* oppacity: 0; */
 }
 
-.prev-btn .on,
-.next-btn .on {
-    opacity: 1;
+.hero-prev-btn .on,
+.hero-next-btn .on {
+    /* opacity: 1; */
 }
 
-.prev-btn .off,
+/* .prev-btn .off,
 .next-btn .off {
     opacity: 0.35;
-}
+} */
 
 .keywords {
     width: 100%;

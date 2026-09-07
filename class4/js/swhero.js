@@ -1,7 +1,8 @@
-cnst main-visual-bg = document.querySelectorAll('.hero .main-visual .main-visual-bg')
+cnst main-visual-bg = document.querySelectorAll(".hero .main-visual .main-visual-bg");
+// console.log(mainvisualbg);
+
 const swHero = new Swiper(".sw-hero", {
   speed: 1000,
-  centeredSlides: true,
   // autoplay: {
   //   delay: 5000,
   //   disableOnInteraction: false,
@@ -15,14 +16,16 @@ const swHero = new Swiper(".sw-hero", {
     prevEl: ".hero-prev-btn",
   },
 
-  on:{
-    slidechangetransitionstart: function(swiper){
+  on: {
+    slidechangetransitionstart: function(swiper) {
       // const activeslide = swiper.activeindex + 1;
       // console.log(activeslide);
       // mainvisualbg.style.backgroundimage = 'url(asset/image/slide_${activeslide}.png)';
       const activeslide = swiper.slide{swiper.activeindex};
       // console.log(activeindex);
-      activeslide.querySelectorAll("slide-image img");
+      activeslide.querySelector("slide-image img").src;
       // console.log(activeslideimg.src);
       mainvisualbg.style.backgroundimage = 'url(${activeslideimg.src})';
-}}};
+    },
+  },
+});
