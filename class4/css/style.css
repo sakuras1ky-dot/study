@@ -378,6 +378,7 @@ section {
     height: 1px;
     background-color: #fff;
 }
+
 .hero-prev-btn {
     position: absolute;
     top: 50%;
@@ -395,7 +396,7 @@ section {
     left: 0;
     object-fit: contain;
     position: absolute;
-    /* opacity: 0; */
+    opacity: 0;
 }
 
 .hero-next-btn {
@@ -415,18 +416,48 @@ section {
     left: 0;
     object-fit: contain;
     position: absolute;
-    /* oppacity: 0; */
+    oppacity: 0;
 }
 
 .hero-prev-btn .on,
 .hero-next-btn .on {
-    /* opacity: 1; */
+    opacity: 1;
+    transition: opacity 0.2s;
 }
 
-/* .prev-btn .off,
+.prev-btn .off,
 .next-btn .off {
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.hero-prev-btn.swiper-btn-disabled,
+.hero-next-btn.swiper-btn-disabled {
     opacity: 0.35;
-} */
+    cursor: auto;
+    pointer-events: none;
+}
+
+.sw-hero .pagination {
+    position: absolute;
+    left: calc(50% + 140px);
+    top: 465px;
+    z-index: 100;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.sw-hero .pagination .play-stop-btn {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.5) url("../asset/icon/slide_stop.png") no-repeat center;
+    background-size: 8px 10px;
+    text-indent: -9999px;
+    border-radius: 50%;
+}
 
 .keywords {
     width: 100%;
