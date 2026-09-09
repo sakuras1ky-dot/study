@@ -1,20 +1,16 @@
-const mainVisualBg = document.querySelector(
-  ".hero .main-visual .main-visual-bg",
-);
-// console.log(mainVisualBg);
-const heroBtns = document.querySelectorAll(".visual-inner .sw-hero-btn");
-// console.log(heroBtns);
-const playStopBtn = document.querySelector(
-  ".sw-hero .pagination .play-stop-btn",
-);
-// console.log(playStopBtn);
+const main_visual_bg = document.querySelectorAll(".hero .main-visual .main-visual-bg");
+// console.log(mainvisualbg);
 
-// 히어로 슬라이드 버튼 호버 인터랙션
-heroBtns.forEach((btn) => {
-  btn.addEventListener("mouseenter", () => {
-    btn.querySelector(".off").style.opacity = 1;
+const herobtns = document.querySelectorAll(".visual-inner btn");
+console.log(herobtns);
+const playstopbtn = document.querySelector(".sw-hero .pagination .play-stop-btn");
+console.log(play - stop - btn);
+// 히어로 슬라이드 버튼 호버 인터렉션
+herobtns.forEach(() => {
+  Btn.addeventlistener("mouseenter", () => {
+    btn.querySelector(".on").style.opacity = 1;
   });
-  btn.addEventListener("mouseout", () => {
+  btn.addeventlistener("mouseout", () => {
     btn.querySelector(".off").style.opacity = 0;
   });
 });
@@ -34,7 +30,6 @@ const swHero = new Swiper(".sw-hero", {
     nextEl: ".hero-next-btn",
     prevEl: ".hero-prev-btn",
   },
-
   on: {
     slideChangeTransitionStart: function (swiper) {
       // const activeSilde = swiper.activeIndex + 1;
@@ -49,20 +44,18 @@ const swHero = new Swiper(".sw-hero", {
   }
 });
 
-// 재생, 정지 버튼
-playStopBtn.addEventListener("click", () => {
-  // console.log("슬라이드 자동재생 정지");
+//재생, 정지버튼
+playstopbtn.addEventListener("click", () => {
+  swHero.autoplay.stop();
+  const isrunning = swHero.autoplay.running;
+  // console.log(slideautostop);
 
-  const isRunning = swHero.autoplay.running;
-  // console.log(isRunning);
-
-  if (isRunning) {
+  if (isrunning) {
     swHero.autoplay.stop();
     console.log("자동재생 정지");
-    playStopBtn.style.backgroundImage = `url(assets/icons/slide_play.png)`;
+    playstopbtn.style.backgroundimage = 'url(asset/icon/slide_play.png)';
   } else {
     swHero.autoplay.start();
-    console.log("자동재생 시작");
-    playStopBtn.style.backgroundImage = `url(assets/icons/slide_stop.png)`;
+    console.log("자동재생 시작")
   }
 });
