@@ -1,0 +1,16 @@
+const swFestival = new swiper(".sw-festival", {
+    speed: 200,
+    loop: true,
+    slidesPerVisew: 3.5,
+    slidePerGroup: 1,
+    // spacebetween: 32,
+    // centeredslides: true,
+    pagination: {
+        el: ".festival .swiper-pagination",
+        type: "fraction",
+    },
+    navigation: {
+        nextEl: ".festival-next-btn",
+        prevEl: ".festival-prev-btn",
+    },
+});
