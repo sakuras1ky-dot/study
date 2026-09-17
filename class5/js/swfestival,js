@@ -1,8 +1,8 @@
-const swFestival = new swiper(".sw-festival", {
+const swFestival = new Swiper(".sw-festival", {
     speed: 200,
     loop: true,
-    slidesPerVisew: 3.5,
-    slidePerGroup: 1,
+    slidesPerView: 3.5,
+    slidesPerGroup: 1,
     // spacebetween: 32,
     // centeredslides: true,
     pagination: {
