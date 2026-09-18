@@ -72,12 +72,14 @@ section {
   height: 100%;
   /* background-color: #fff; */
 }
+/* 컴포넌트 스타일 */
 .section-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 42px;
   letter-spacing: -0.5px;
 }
+
 .section-title em {
   font-weight: 400;
   font-style: normal;
@@ -88,8 +90,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: fit-content;
   padding: 0 12px;
+  width: fit-content;
   height: 32px;
   border-radius: 20px;
   border: 1px solid #7a45e5;
@@ -176,12 +178,15 @@ section {
   width: 32px;
   height: 32px;
 }
+
 .main-pick img {
   width: 100%;
   object-fit: contain;
 }
+
 .main-pick-bubble {
 }
+
 .main-search {
   width: 32px;
   height: 32px;
@@ -605,11 +610,11 @@ section {
 }
 
 .festival {
+  position: relative;
   width: 100%;
   /* height: 507px; */
   padding-top: 65px;
   /* background-color: tomato; */
-
   background: linear-gradient(to bottom, #F2F2F7 400px, #FFF 400px);
 }
 
@@ -631,7 +636,7 @@ section {
 .festival-title h2{
   margin-bottom: 30px;
 }
-.festival-title .more-Btn{}
+.festival-title .more-btn{}
 
 .festival .pagination{
   position: absolute;
@@ -645,29 +650,32 @@ section {
 .festival .festival-prev-btn{
   width: 10px;
   height: 16px;
-  background: url(../assets/icons/main_slide_prev.png) 0 0 no-repeat;
+  background: url("../assets/icons/main_slide_prev.png") 0 0 no-repeat;
   background-size: 100% 100%;
   text-indent: -9999px;  
 }
 .festival .festival-next-btn{
   width: 10px;
   height: 16px;
-  background: url(../assets/icons/main_slide_next.png) 0 0 no-repeat;
+  background: url("../assets/icons/main_slide_next.png") 0 0 no-repeat;
   background-size: 100% 100%;
   text-indent: -9999px;  
 }
-.festival .festival-swiper-pagination{
+
+.festival .swiper-pagination {
   position: static;
   width: auto;
   margin: 0 16px;
 }
-.festival .festival-swiper-pagination .swiper-pagination-current{
+
+.festival .swiper-pagination .swiper-pagination-current{
   width: 10px;
   margin-right: 3px;
   font-weight: 600;
 }
-.festival .festival-swiper-pagination .swiper-pagination-total{
-  margin: 3px;
+
+.festival .swiper-pagination .swiper-pagination-total{
+  margin-left: 3px;
   font-weight: 300;
 }
 
@@ -676,8 +684,9 @@ section {
   /* top: 0; */
   /* left: 50%; */
   /* transform: translateX(-250px); */
-  /* width: calc(50% + 250px); */
   float: right;
+  width: calc(50% + 250px);
+  /* height: 100%; */
 }
 
 .sw-festival{
@@ -686,7 +695,7 @@ section {
 
 .sw-festival .swiper-wrapper{}
 .sw-festival .swiper-slide{
-  margin-right: 32px;
+  /* margin-right: 32px; */
 }
 .sw-festival .swiper-slide:nth-child(odd){
   margin-top: 50px;
@@ -699,7 +708,7 @@ section {
 
 .sw-festival .swiper-slide.swiper-slide-active  a {
   border: 4px solid #7a45e5;
-  box-shadow: 0 0 20px 0 rgba(0 0 0 0.25);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
 }
 
 .alio {
@@ -758,7 +767,7 @@ section {
   height: 208px;
 }
 
-.alio .card-wrap .alio-card .img-wrap img {
+.alio .card-wrap .alio-card .img-wrap > img {
   position: absolute;
   right: 0;
   top: 0;
