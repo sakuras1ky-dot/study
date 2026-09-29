@@ -1,0 +1,30 @@
+{
+    "name" : "화로",
+    "spownitem" : [
+        {
+            "name" : "스테이크",
+            "inputitem" : [
+                {
+                    "itemnumber" : "",
+                    "name" : "소고기",
+                    "quantity" : 1
+                }
+            ],
+            "outputitem" : [
+                {
+                    "itemnumber" : "",
+                    "name" : "소고기",
+                    "quantity" : 1
+                }
+            ]
+        }
+    ],
+    "price" : [
+        {
+            "energy" : 30
+        },
+        {
+            "coin" : 1000
+        }
+    ]
+}

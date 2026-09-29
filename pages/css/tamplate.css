@@ -1,0 +1,304 @@
+.useractive {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* ==============================
+   INDUSTRY CITY - HEADER
+============================== */
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 24px;
+
+    background:
+        linear-gradient(180deg,
+            #2d3236 0%,
+            #202428 100%);
+
+    border-top: 1px solid #454c51;
+    border-bottom: 3px solid #111416;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.06);
+
+    color: #eeeeee;
+}
+
+
+/* ==============================
+   PLAYER
+============================== */
+
+header .user {
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding-right: 20px;
+
+    border-right: 1px solid #484f54;
+}
+
+
+/* 플레이어 이미지 */
+
+header .user img {
+    width: 42px;
+    height: 42px;
+
+    object-fit: cover;
+
+    background: #15181a;
+
+    border: 2px solid #555d62;
+    border-radius: 2px;
+
+    box-shadow:
+        inset 0 0 0 1px #111416,
+        0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+
+/* 플레이어 이름 */
+
+header .user span {
+    color: #f0f0f0;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* ==============================
+   USER ACTION
+============================== */
+
+header .useractive {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+/* ==============================
+   INDUSTRIAL BUTTON
+============================== */
+
+header button {
+    position: relative;
+
+    min-width: 110px;
+    height: 42px;
+
+    padding: 0 18px;
+
+    background:
+        linear-gradient(180deg,
+            #353b40,
+            #252a2e);
+
+    color: #dfe3e5;
+
+    border: 1px solid #4a5257;
+    border-left: 4px solid #f5b700;
+    border-radius: 2px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 0.8px;
+
+    cursor: pointer;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.07),
+        0 3px 0 #111416;
+
+    transition:
+        background 0.15s,
+        border-color 0.15s,
+        transform 0.1s,
+        box-shadow 0.1s;
+}
+
+
+/* 마우스 오버 */
+
+header button:hover {
+    background:
+        linear-gradient(180deg,
+            #41494e,
+            #30363a);
+
+    border-color: #687177;
+    border-left-color: #ffc400;
+
+    color: #ffffff;
+}
+
+
+/* 클릭 */
+
+header button:active {
+    transform: translateY(2px);
+
+    box-shadow:
+        inset 0 2px 4px rgba(0, 0, 0, 0.5),
+        0 1px 0 #111416;
+}
+
+
+/* 키보드 포커스 */
+
+header button:focus-visible {
+    outline: 2px solid #f5b700;
+    outline-offset: 3px;
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 650px) {
+
+    header {
+        height: 64px;
+        padding: 0 10px;
+    }
+
+    header .user {
+        gap: 7px;
+        padding-right: 8px;
+    }
+
+    header .user img {
+        width: 36px;
+        height: 36px;
+    }
+
+    header .user span {
+        max-width: 80px;
+
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+        font-size: 12px;
+    }
+
+    header .useractive {
+        gap: 4px;
+    }
+
+    header button {
+        min-width: auto;
+        height: 38px;
+
+        padding: 0 10px;
+
+        border-left-width: 3px;
+
+        font-size: 11px;
+    }
+}
+
+/* =========================
+   INDUSTRIAL BUTTON
+========================= */
+
+button {
+    /* 크기 */
+    min-width: 120px;
+    min-height: 44px;
+    padding: 10px 18px;
+
+    /* 산업용 패널 느낌 */
+    background: #252a2e;
+    color: #e8e8e8;
+
+    border: 1px solid #4a5156;
+    border-left: 4px solid #f5b700;
+    border-radius: 2px;
+
+    /* 글자 */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    /* 효과 */
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.08),
+        0 3px 0 #111416,
+        0 4px 8px rgba(0, 0, 0, 0.3);
+
+    cursor: pointer;
+
+    transition:
+        background 0.15s,
+        border-color 0.15s,
+        transform 0.1s,
+        box-shadow 0.1s;
+}
+
+
+/* 마우스를 올렸을 때 */
+button:hover {
+    background: #30363a;
+    border-color: #626b70;
+    border-left-color: #ffca28;
+}
+
+
+/* 버튼을 누르는 순간 */
+button:active {
+    transform: translateY(2px);
+
+    box-shadow:
+        inset 0 2px 4px rgba(0, 0, 0, 0.4),
+        0 1px 0 #111416;
+}
+
+
+/* 키보드 선택 */
+button:focus-visible {
+    outline: 2px solid #f5b700;
+    outline-offset: 3px;
+}
+
+
+/* 비활성화 */
+button:disabled {
+    background: #1c2023;
+    color: #62696d;
+
+    border-color: #343a3e;
+    border-left-color: #555b5f;
+
+    box-shadow: none;
+
+    cursor: not-allowed;
+    transform: none;
+}

@@ -1,0 +1,349 @@
+<main class="maintenance">
+
+    <!-- 정비 화면 제목 -->
+    <section class="maintenance_header">
+        <div>
+            <span>MAINTENANCE SYSTEM</span>
+            <h1>정비</h1>
+            <p>보유한 장비를 점검하고 수리할 수 있습니다.</p>
+        </div>
+    </section>
+
+
+    <!-- 정비할 장비 선택 -->
+    <section class="maintenance_inventory">
+
+        <div class="section_title">
+            <div>
+                <span>01</span>
+                <h2>정비 장비 선택</h2>
+            </div>
+
+            <p>
+                보유 장비
+                <strong data-equipment-count>5</strong>
+            </p>
+        </div>
+
+
+        <div class="maintenance_item_list">
+
+            <button
+                type="button"
+                class="maintenance_item active"
+                data-item-id="1001">
+
+                <div class="item_image">
+                    <img src="/image/item/hammer.png" alt="산업용 해머">
+                </div>
+
+                <div class="item_info">
+                    <span>WEAPON</span>
+                    <strong>산업용 해머</strong>
+
+                    <div class="item_durability">
+                        <span>내구도</span>
+                        <span>72 / 100</span>
+                    </div>
+                </div>
+
+            </button>
+
+
+            <button
+                type="button"
+                class="maintenance_item"
+                data-item-id="1002">
+
+                <div class="item_image">
+                    <img src="/image/item/helmet.png" alt="안전 헬멧">
+                </div>
+
+                <div class="item_info">
+                    <span>HELMET</span>
+                    <strong>산업용 안전 헬멧</strong>
+
+                    <div class="item_durability">
+                        <span>내구도</span>
+                        <span>43 / 100</span>
+                    </div>
+                </div>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- 정비 작업대 -->
+    <section class="maintenance_workbench">
+
+        <div class="section_title">
+
+            <div>
+                <span>02</span>
+                <h2>정비 작업대</h2>
+            </div>
+
+            <span class="system_status">
+                READY
+            </span>
+
+        </div>
+
+
+        <div class="workbench_content">
+
+            <!-- 선택 장비 -->
+            <div class="selected_equipment">
+
+                <span class="equipment_type">
+                    WEAPON
+                </span>
+
+                <div class="equipment_image">
+
+                    <img
+                        src="/image/item/hammer.png"
+                        alt="산업용 해머"
+                        data-selected-image>
+
+                </div>
+
+                <h3 data-selected-name>
+                    산업용 해머
+                </h3>
+
+                <span data-selected-level>
+                    LV. 12
+                </span>
+
+            </div>
+
+
+            <!-- 장비 상태 -->
+            <div class="equipment_condition">
+
+                <h3>장비 상태</h3>
+
+
+                <div class="condition">
+
+                    <div class="condition_title">
+
+                        <span>DURABILITY</span>
+
+                        <span>
+                            <strong data-durability>
+                                72
+                            </strong>
+                            /
+                            <span data-max-durability>
+                                100
+                            </span>
+                        </span>
+
+                    </div>
+
+
+                    <div class="condition_bar">
+
+                        <div
+                            class="condition_value"
+                            data-durability-bar
+                            style="width: 72%;">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 상태 정보 -->
+                <div class="condition_info">
+
+                    <div>
+                        <span>상태</span>
+                        <strong data-condition>
+                            보통
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>사용 횟수</span>
+                        <strong data-use-count>
+                            142
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>수리 횟수</span>
+                        <strong data-repair-count>
+                            3
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 수리 -->
+    <section class="repair">
+
+        <div class="section_title">
+
+            <div>
+                <span>03</span>
+                <h2>수리</h2>
+            </div>
+
+        </div>
+
+
+        <div class="repair_content">
+
+            <!-- 필요한 재료 -->
+            <div class="repair_material">
+
+                <h3>필요 재료</h3>
+
+                <ul>
+
+                    <li>
+
+                        <div class="material_image">
+                            <img src="/image/item/steel.png" alt="강철">
+                        </div>
+
+                        <div>
+                            <strong>강철</strong>
+
+                            <span>
+                                <span>4</span>
+                                /
+                                <span>10</span>
+                            </span>
+                        </div>
+
+                    </li>
+
+
+                    <li>
+
+                        <div class="material_image">
+                            <img src="/image/item/parts.png" alt="기계 부품">
+                        </div>
+
+                        <div>
+                            <strong>기계 부품</strong>
+
+                            <span>
+                                <span>2</span>
+                                /
+                                <span>8</span>
+                            </span>
+                        </div>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- 수리 결과 -->
+            <div class="repair_result">
+
+                <h3>수리 결과</h3>
+
+                <div class="repair_change">
+
+                    <div>
+                        <span>현재</span>
+                        <strong>72</strong>
+                    </div>
+
+                    <span class="arrow">
+                        →
+                    </span>
+
+                    <div>
+                        <span>수리 후</span>
+                        <strong>100</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- 수리 비용 -->
+            <div class="repair_cost">
+
+                <span>정비 비용</span>
+
+                <strong>
+                    1,200 C
+                </strong>
+
+                <button
+                    type="button"
+                    data-repair>
+                    수리 시작
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 정비 기록 -->
+    <section class="maintenance_log">
+
+        <div class="section_title">
+
+            <div>
+                <span>04</span>
+                <h2>정비 기록</h2>
+            </div>
+
+        </div>
+
+
+        <div class="log_list">
+
+            <div class="log">
+                <span>2026.09.28</span>
+                <strong>산업용 해머</strong>
+                <span>내구도 45 → 100</span>
+            </div>
+
+            <div class="log">
+                <span>2026.09.25</span>
+                <strong>안전 헬멧</strong>
+                <span>내구도 61 → 100</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <link
+        rel="stylesheet"
+        href="/css/maintenance.css">
+
+    <script
+        src="/js/maintenance.js"
+        defer>
+    </script>
+
+</main>

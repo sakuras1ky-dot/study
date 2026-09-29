@@ -1,0 +1,710 @@
+<main class="equipment_page">
+
+    <!-- =========================
+         장비창 HEADER
+    ========================== -->
+
+    <section class="equipment_header">
+
+        <div>
+            <span>EQUIPMENT</span>
+            <h1>장비</h1>
+            <p>장비를 확인하고 캐릭터에 착용할 수 있습니다.</p>
+        </div>
+
+        <div class="equipment_score">
+
+            <span>장비 점수</span>
+
+            <strong data-equipment-score>
+                1,240
+            </strong>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         장비창 MAIN
+    ========================== -->
+
+    <section class="equipment_manager">
+
+
+        <!-- =====================
+             착용 장비
+        ====================== -->
+
+        <div class="equipped">
+
+            <div class="panel_title">
+
+                <span>01</span>
+
+                <h2>착용 장비</h2>
+
+            </div>
+
+
+            <div class="equipment_slots">
+
+
+                <!-- 무기 -->
+
+                <button
+                    type="button"
+                    class="equipment_slot"
+                    data-slot="weapon">
+
+                    <span class="slot_type">
+                        WEAPON
+                    </span>
+
+                    <div class="slot_image">
+
+                        <img
+                            src="/image/item/sword.png"
+                            alt="무기">
+
+                    </div>
+
+                    <strong>
+                        무기
+                    </strong>
+
+                </button>
+
+
+
+                <!-- 모자 -->
+
+                <button
+                    type="button"
+                    class="equipment_slot"
+                    data-slot="helmet">
+
+                    <span class="slot_type">
+                        HELMET
+                    </span>
+
+                    <div class="slot_image">
+
+                        <img
+                            src="/image/item/helmet.png"
+                            alt="모자">
+
+                    </div>
+
+                    <strong>
+                        모자
+                    </strong>
+
+                </button>
+
+
+
+                <!-- 갑옷 -->
+
+                <button
+                    type="button"
+                    class="equipment_slot"
+                    data-slot="armor">
+
+                    <span class="slot_type">
+                        ARMOR
+                    </span>
+
+                    <div class="slot_image">
+
+                        <img
+                            src="/image/item/armor.png"
+                            alt="갑옷">
+
+                    </div>
+
+                    <strong>
+                        갑옷
+                    </strong>
+
+                </button>
+
+
+
+                <!-- 신발 -->
+
+                <button
+                    type="button"
+                    class="equipment_slot"
+                    data-slot="boots">
+
+                    <span class="slot_type">
+                        BOOTS
+                    </span>
+
+                    <div class="slot_image">
+
+                        <img
+                            src="/image/item/boots.png"
+                            alt="신발">
+
+                    </div>
+
+                    <strong>
+                        신발
+                    </strong>
+
+                </button>
+
+
+
+                <!-- 곡괭이 -->
+
+                <button
+                    type="button"
+                    class="equipment_slot"
+                    data-slot="pickaxe">
+
+                    <span class="slot_type">
+                        PICKAXE
+                    </span>
+
+                    <div class="slot_image">
+
+                        <img
+                            src="/image/item/pickaxe.png"
+                            alt="곡괭이">
+
+                    </div>
+
+                    <strong>
+                        곡괭이
+                    </strong>
+
+                </button>
+
+
+
+                <!-- 삽 -->
+
+                <button
+                    type="button"
+                    class="equipment_slot"
+                    data-slot="shovel">
+
+                    <span class="slot_type">
+                        SHOVEL
+                    </span>
+
+                    <div class="slot_image">
+
+                        <img
+                            src="/image/item/shovel.png"
+                            alt="삽">
+
+                    </div>
+
+                    <strong>
+                        삽
+                    </strong>
+
+                </button>
+
+
+                <!-- 추가 도구 -->
+
+                <button
+                    type="button"
+                    class="equipment_slot empty"
+                    data-slot="tool">
+
+                    <span class="slot_type">
+                        TOOL
+                    </span>
+
+                    <div class="slot_image">
+                    </div>
+
+                    <strong>
+                        도구
+                    </strong>
+
+                </button>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================
+             캐릭터
+        ====================== -->
+
+        <div class="character_panel">
+
+            <div class="panel_title">
+
+                <span>02</span>
+
+                <h2>캐릭터</h2>
+
+            </div>
+
+
+            <!-- 캐릭터 이미지 -->
+
+            <div class="character">
+
+                <div class="character_image">
+
+                    <img
+                        src="/image/player/player.png"
+                        alt="캐릭터"
+                        data-character-image>
+
+                </div>
+
+
+                <div class="character_name">
+
+                    <strong data-player-name>
+                        플레이어 닉네임
+                    </strong>
+
+                    <span data-player-level>
+                        LV.32
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- 능력치 -->
+
+            <div class="character_stats">
+
+
+                <div class="stat">
+
+                    <span>
+                        공격력
+                    </span>
+
+                    <strong data-attack>
+                        120
+                    </strong>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <span>
+                        방어력
+                    </span>
+
+                    <strong data-defense>
+                        85
+                    </strong>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <span>
+                        채굴력
+                    </span>
+
+                    <strong data-mining>
+                        42
+                    </strong>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <span>
+                        작업속도
+                    </span>
+
+                    <strong data-work-speed>
+                        110%
+                    </strong>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <span>
+                        이동속도
+                    </span>
+
+                    <strong data-move-speed>
+                        100%
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================
+             보유 장비
+        ====================== -->
+
+        <div class="equipment_inventory">
+
+
+            <div class="panel_title">
+
+                <span>03</span>
+
+                <h2>보유 장비</h2>
+
+            </div>
+
+
+
+            <!-- FILTER -->
+
+            <div class="equipment_filter">
+
+                <button
+                    type="button"
+                    class="active"
+                    data-filter="all">
+
+                    전체
+
+                </button>
+
+
+                <button
+                    type="button"
+                    data-filter="weapon">
+
+                    무기
+
+                </button>
+
+
+                <button
+                    type="button"
+                    data-filter="armor">
+
+                    방어구
+
+                </button>
+
+
+                <button
+                    type="button"
+                    data-filter="tool">
+
+                    도구
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =====================
+                 장비 목록
+            ====================== -->
+
+            <div
+                class="equipment_items"
+                data-equipment-items>
+
+
+                <!-- 검 -->
+
+                <button
+                    type="button"
+                    class="equipment_item"
+                    data-item-id="1001"
+                    data-type="weapon">
+
+                    <div class="item_image">
+
+                        <img
+                            src="/image/item/sword.png"
+                            alt="철검">
+
+                    </div>
+
+
+                    <div class="item_info">
+
+                        <strong>
+                            철검
+                        </strong>
+
+                        <span>
+                            LV.10
+                        </span>
+
+                    </div>
+
+                </button>
+
+
+
+                <!-- 곡괭이 -->
+
+                <button
+                    type="button"
+                    class="equipment_item"
+                    data-item-id="1002"
+                    data-type="tool">
+
+                    <div class="item_image">
+
+                        <img
+                            src="/image/item/pickaxe.png"
+                            alt="철 곡괭이">
+
+                    </div>
+
+
+                    <div class="item_info">
+
+                        <strong>
+                            철 곡괭이
+                        </strong>
+
+                        <span>
+                            LV.8
+                        </span>
+
+                    </div>
+
+                </button>
+
+
+
+                <!-- 갑옷 -->
+
+                <button
+                    type="button"
+                    class="equipment_item"
+                    data-item-id="1003"
+                    data-type="armor">
+
+                    <div class="item_image">
+
+                        <img
+                            src="/image/item/armor.png"
+                            alt="작업 갑옷">
+
+                    </div>
+
+
+                    <div class="item_info">
+
+                        <strong>
+                            작업 갑옷
+                        </strong>
+
+                        <span>
+                            LV.12
+                        </span>
+
+                    </div>
+
+                </button>
+
+
+
+                <!-- 삽 -->
+
+                <button
+                    type="button"
+                    class="equipment_item"
+                    data-item-id="1004"
+                    data-type="tool">
+
+                    <div class="item_image">
+
+                        <img
+                            src="/image/item/shovel.png"
+                            alt="철 삽">
+
+                    </div>
+
+
+                    <div class="item_info">
+
+                        <strong>
+                            철 삽
+                        </strong>
+
+                        <span>
+                            LV.6
+                        </span>
+
+                    </div>
+
+                </button>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         선택한 장비 정보
+    ========================== -->
+
+    <section class="selected_equipment">
+
+
+        <div class="panel_title">
+
+            <span>04</span>
+
+            <h2>장비 정보</h2>
+
+        </div>
+
+
+        <div class="selected_equipment_content">
+
+
+            <!-- IMAGE -->
+
+            <div class="selected_item_image">
+
+                <img
+                    src="/image/item/sword.png"
+                    alt="선택한 장비"
+                    data-selected-image>
+
+            </div>
+
+
+
+            <!-- INFO -->
+
+            <div class="selected_item_info">
+
+                <span data-selected-type>
+                    WEAPON
+                </span>
+
+
+                <h2 data-selected-name>
+                    철검
+                </h2>
+
+
+                <p data-selected-description>
+                    철로 제작된 기본 무기입니다.
+                </p>
+
+
+                <div class="selected_item_stats">
+
+
+                    <div>
+
+                        <span>
+                            공격력
+                        </span>
+
+                        <strong>
+                            +25
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            내구도
+                        </span>
+
+                        <strong>
+                            87 / 100
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            무게
+                        </span>
+
+                        <strong>
+                            3.2kg
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ACTION -->
+
+            <div class="selected_item_action">
+
+
+                <button
+                    type="button"
+                    data-equip>
+
+                    장착
+
+                </button>
+
+
+                <button
+                    type="button"
+                    data-unequip>
+
+                    장착 해제
+
+                </button>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <link
+        rel="stylesheet"
+        href="/css/equipment.css">
+
+
+    <script
+        src="/js/equipment.js"
+        defer>
+    </script>
+
+</main>

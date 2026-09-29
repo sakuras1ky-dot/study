@@ -1,0 +1,21 @@
+{
+    "_id" : "인벤토리 번호(디비에서 할당한 번호)",
+    "equipment" : [
+        {
+            "_id" : "",
+            "name" : "(훈련용)나무 검",
+            "demage" : 20,
+            "Critical" : 0.03,
+            "Criticalbonus" : 30,
+            "category" : "한손무기"
+
+        }
+    ],
+    "expendables" : [
+        {
+            "_id" : "",
+            "name" : "HP포션",
+            "quantity" : 10
+        }
+    ]
+}

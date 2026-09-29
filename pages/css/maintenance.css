@@ -1,0 +1,1004 @@
+/* =========================================================
+   INDUSTRY CITY
+   MAINTENANCE.CSS
+========================================================= */
+
+:root {
+    --bg-main: #121619;
+    --bg-panel: #202529;
+    --bg-panel-light: #292f33;
+    --bg-dark: #171b1e;
+
+    --border: #41494e;
+    --border-light: #596268;
+
+    --yellow: #f5b700;
+    --yellow-light: #ffca28;
+
+    --text: #eeeeee;
+    --text-sub: #9da5aa;
+    --text-dark: #111416;
+
+    --green: #39c982;
+    --red: #d94242;
+    --orange: #e98b25;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.maintenance {
+    width: 100%;
+    min-height: calc(100vh - 72px);
+
+    padding: 24px;
+
+    color: var(--text);
+
+    background:
+        linear-gradient(
+            135deg,
+            #171b1e 0%,
+            #0f1214 100%
+        );
+}
+
+
+/* =========================================================
+   COMMON SECTION
+========================================================= */
+
+.maintenance > section {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto 20px;
+    padding: 20px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #262c30,
+            #1c2124
+        );
+
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--yellow);
+
+    box-shadow:
+        0 6px 16px rgba(0, 0, 0, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.maintenance_header {
+    display: flex;
+    align-items: center;
+
+    min-height: 130px;
+}
+
+
+.maintenance_header > div {
+    position: relative;
+
+    padding-left: 18px;
+}
+
+
+.maintenance_header > div::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 5px;
+
+    background: var(--yellow);
+}
+
+
+.maintenance_header span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: var(--yellow);
+
+    font-size: 10px;
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+
+.maintenance_header h1 {
+    margin: 0 0 6px;
+
+    color: #ffffff;
+
+    font-size: 28px;
+    font-weight: 800;
+}
+
+
+.maintenance_header p {
+    margin: 0;
+
+    color: var(--text-sub);
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.section_title {
+    min-height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid var(--border);
+}
+
+
+.section_title > div {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.section_title > div > span {
+    width: 32px;
+    height: 26px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--yellow);
+
+    color: var(--text-dark);
+
+    font-size: 10px;
+    font-weight: 900;
+}
+
+
+.section_title h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 17px;
+}
+
+
+.section_title > p {
+    margin: 0;
+
+    color: var(--text-sub);
+
+    font-size: 11px;
+}
+
+
+.section_title > p strong {
+    margin-left: 5px;
+
+    color: var(--yellow);
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   ITEM LIST
+========================================================= */
+
+.maintenance_item_list {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fill, minmax(230px, 1fr));
+
+    gap: 10px;
+}
+
+
+/* =========================================================
+   ITEM
+========================================================= */
+
+.maintenance_item {
+    min-width: 0;
+    min-height: 100px;
+
+    display: grid;
+
+    grid-template-columns: 80px 1fr;
+
+    gap: 12px;
+
+    padding: 10px;
+
+    text-align: left;
+
+    background:
+        linear-gradient(
+            135deg,
+            #171b1e,
+            #22282c
+        );
+
+    color: var(--text);
+
+    border: 1px solid var(--border);
+    border-left: 3px solid #4d565b;
+
+    border-radius: 0;
+
+    cursor: pointer;
+
+    transition: 0.15s;
+}
+
+
+.maintenance_item:hover {
+    background: #293034;
+
+    border-color: #687177;
+    border-left-color: var(--yellow);
+
+    transform: translateY(-2px);
+}
+
+
+.maintenance_item.active {
+    background: #2b3033;
+
+    border-color: var(--yellow);
+    border-left: 4px solid var(--yellow);
+}
+
+
+/* =========================================================
+   ITEM IMAGE
+========================================================= */
+
+.maintenance_item .item_image {
+    width: 80px;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #101315;
+
+    border: 1px solid #3d4549;
+}
+
+
+.maintenance_item .item_image img {
+    max-width: 75%;
+    max-height: 75%;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   ITEM INFO
+========================================================= */
+
+.maintenance_item .item_info {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 5px;
+}
+
+
+.maintenance_item .item_info > span:first-child {
+    color: var(--yellow);
+
+    font-size: 9px;
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+
+.maintenance_item .item_info > strong {
+    overflow: hidden;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.item_durability {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 6px;
+
+    color: var(--text-sub);
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   SYSTEM STATUS
+========================================================= */
+
+.system_status {
+    position: relative;
+
+    padding-left: 15px;
+
+    color: var(--green);
+
+    font-size: 10px;
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+
+.system_status::before {
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+    left: 0;
+
+    width: 7px;
+    height: 7px;
+
+    transform: translateY(-50%);
+
+    background: var(--green);
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 8px rgba(57, 201, 130, 0.7);
+}
+
+
+/* =========================================================
+   WORKBENCH
+========================================================= */
+
+.workbench_content {
+    display: grid;
+
+    grid-template-columns: 280px 1fr;
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   SELECTED EQUIPMENT
+========================================================= */
+
+.selected_equipment {
+    position: relative;
+
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #15191c,
+            #22282c
+        );
+
+    border: 1px solid var(--border);
+
+    box-shadow:
+        inset 0 0 25px rgba(0, 0, 0, 0.45);
+}
+
+
+.equipment_type {
+    position: absolute;
+
+    top: 12px;
+    left: 12px;
+
+    color: var(--yellow);
+
+    font-size: 9px;
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+
+.equipment_image {
+    width: 160px;
+    height: 160px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 12px;
+
+    background: #101315;
+
+    border: 1px solid #41494e;
+}
+
+
+.equipment_image img {
+    max-width: 85%;
+    max-height: 85%;
+
+    object-fit: contain;
+}
+
+
+.selected_equipment h3 {
+    margin: 0 0 5px;
+
+    color: #ffffff;
+
+    font-size: 17px;
+}
+
+
+.selected_equipment > span:last-child {
+    color: var(--text-sub);
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   CONDITION
+========================================================= */
+
+.equipment_condition {
+    padding: 20px;
+
+    background: var(--bg-dark);
+
+    border: 1px solid var(--border);
+}
+
+
+.equipment_condition > h3 {
+    margin: 0 0 22px;
+
+    color: #ffffff;
+
+    font-size: 15px;
+}
+
+
+.condition {
+    margin-bottom: 25px;
+}
+
+
+.condition_title {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 8px;
+
+    color: var(--text-sub);
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+
+.condition_title strong {
+    color: #ffffff;
+}
+
+
+.condition_bar {
+    width: 100%;
+    height: 18px;
+
+    padding: 2px;
+
+    overflow: hidden;
+
+    background: #0d1012;
+
+    border: 1px solid #41494e;
+}
+
+
+.condition_value {
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #b57415,
+            var(--yellow)
+        );
+
+    transition: width 0.3s ease;
+}
+
+
+/* =========================================================
+   CONDITION INFO
+========================================================= */
+
+.condition_info {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 10px;
+}
+
+
+.condition_info > div {
+    min-height: 75px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 12px;
+
+    background: #202529;
+
+    border: 1px solid var(--border);
+    border-left: 3px solid #596268;
+}
+
+
+.condition_info span {
+    color: var(--text-sub);
+
+    font-size: 9px;
+}
+
+
+.condition_info strong {
+    color: #ffffff;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   REPAIR
+========================================================= */
+
+.repair_content {
+    display: grid;
+
+    grid-template-columns:
+        1.4fr 1fr 230px;
+
+    gap: 15px;
+}
+
+
+.repair_material,
+.repair_result,
+.repair_cost {
+    padding: 16px;
+
+    background: var(--bg-dark);
+
+    border: 1px solid var(--border);
+}
+
+
+.repair_content h3 {
+    margin: 0 0 15px;
+
+    color: #ffffff;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   MATERIAL
+========================================================= */
+
+.repair_material ul {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.repair_material li {
+    display: grid;
+
+    grid-template-columns: 55px 1fr;
+
+    gap: 10px;
+
+    padding: 8px;
+
+    background: #202529;
+
+    border: 1px solid #394045;
+}
+
+
+.material_image {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #101315;
+
+    border: 1px solid #3f474c;
+}
+
+
+.material_image img {
+    max-width: 80%;
+    max-height: 80%;
+
+    object-fit: contain;
+}
+
+
+.repair_material li > div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 6px;
+}
+
+
+.repair_material strong {
+    color: #ffffff;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   REPAIR RESULT
+========================================================= */
+
+.repair_result {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.repair_change {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+
+.repair_change > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+.repair_change span {
+    color: var(--text-sub);
+
+    font-size: 9px;
+}
+
+
+.repair_change strong {
+    color: #ffffff;
+
+    font-size: 25px;
+}
+
+
+.repair_change > div:last-child strong {
+    color: var(--green);
+}
+
+
+.repair_change .arrow {
+    color: var(--yellow);
+
+    font-size: 22px;
+}
+
+
+/* =========================================================
+   REPAIR COST
+========================================================= */
+
+.repair_cost {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+
+.repair_cost > span {
+    color: var(--text-sub);
+
+    font-size: 10px;
+}
+
+
+.repair_cost > strong {
+    margin-bottom: 10px;
+
+    color: var(--yellow);
+
+    font-size: 24px;
+}
+
+
+.repair_cost button {
+    width: 100%;
+    height: 45px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #f8c526,
+            #dca400
+        );
+
+    color: #111416;
+
+    border: 1px solid #ffd64b;
+    border-bottom: 3px solid #8c6900;
+
+    border-radius: 2px;
+
+    font-size: 12px;
+    font-weight: 900;
+
+    cursor: pointer;
+
+    transition: 0.15s;
+}
+
+
+.repair_cost button:hover {
+    filter: brightness(1.1);
+}
+
+
+.repair_cost button:active {
+    transform: translateY(2px);
+
+    border-bottom-width: 1px;
+}
+
+
+/* =========================================================
+   LOG
+========================================================= */
+
+.log_list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+
+.log {
+    min-height: 45px;
+
+    display: grid;
+
+    grid-template-columns:
+        120px 1fr 180px;
+
+    align-items: center;
+
+    padding: 0 14px;
+
+    background: var(--bg-dark);
+
+    border: 1px solid #353d41;
+    border-left: 3px solid #50595e;
+}
+
+
+.log:hover {
+    border-left-color: var(--yellow);
+}
+
+
+.log span {
+    color: var(--text-sub);
+
+    font-size: 10px;
+}
+
+
+.log strong {
+    color: #ffffff;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .workbench_content {
+        grid-template-columns:
+            220px 1fr;
+    }
+
+
+    .repair_content {
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+
+    .repair_cost {
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .maintenance {
+        padding: 10px;
+    }
+
+
+    .maintenance > section {
+        margin-bottom: 12px;
+
+        padding: 12px;
+    }
+
+
+    .maintenance_header {
+        min-height: 100px;
+    }
+
+
+    .maintenance_header h1 {
+        font-size: 22px;
+    }
+
+
+    .section_title h2 {
+        font-size: 14px;
+    }
+
+
+    .maintenance_item_list {
+        grid-template-columns: 1fr;
+    }
+
+
+    .workbench_content {
+        grid-template-columns: 1fr;
+    }
+
+
+    .selected_equipment {
+        min-height: 240px;
+    }
+
+
+    .equipment_image {
+        width: 130px;
+        height: 130px;
+    }
+
+
+    .condition_info {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+
+    .repair_content {
+        grid-template-columns: 1fr;
+    }
+
+
+    .repair_cost {
+        grid-column: auto;
+    }
+
+
+    .log {
+        grid-template-columns:
+            85px 1fr;
+
+        gap: 5px;
+
+        padding: 10px;
+    }
+
+
+    .log > span:last-child {
+        grid-column: 2;
+    }
+
+}

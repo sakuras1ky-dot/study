@@ -1,0 +1,474 @@
+[
+    {
+        "name": "수소",
+        "imgurl": ""
+    },
+    {
+        "name": "헬륨",
+        "imgurl": ""
+    },
+    {
+        "name": "리튬",
+        "imgurl": ""
+    },
+    {
+        "name": "베릴륨",
+        "imgurl": ""
+    },
+    {
+        "name": "붕소",
+        "imgurl": ""
+    },
+    {
+        "name": "탄소",
+        "imgurl": ""
+    },
+    {
+        "name": "질소",
+        "imgurl": ""
+    },
+    {
+        "name": "산소",
+        "imgurl": ""
+    },
+    {
+        "name": "불소",
+        "imgurl": ""
+    },
+    {
+        "name": "네온",
+        "imgurl": ""
+    },
+    {
+        "name": "나트륨",
+        "imgurl": ""
+    },
+    {
+        "name": "마그네슘",
+        "imgurl": ""
+    },
+    {
+        "name": "알루미늄",
+        "imgurl": ""
+    },
+    {
+        "name": "규소",
+        "imgurl": ""
+    },
+    {
+        "name": "인",
+        "imgurl": ""
+    },
+    {
+        "name": "황",
+        "imgurl": ""
+    },
+    {
+        "name": "염소",
+        "imgurl": ""
+    },
+    {
+        "name": "아르곤",
+        "imgurl": ""
+    },
+    {
+        "name": "칼륨",
+        "imgurl": ""
+    },
+    {
+        "name": "칼슘",
+        "imgurl": ""
+    },
+    {
+        "name": "스칸듐",
+        "imgurl": ""
+    },
+    {
+        "name": "타이타늄",
+        "imgurl": ""
+    },
+    {
+        "name": "바나듐",
+        "imgurl": ""
+    },
+    {
+        "name": "크로뮴",
+        "imgurl": ""
+    },
+    {
+        "name": "망간",
+        "imgurl": ""
+    },
+    {
+        "name": "철",
+        "imgurl": ""
+    },
+    {
+        "name": "코발트",
+        "imgurl": ""
+    },
+    {
+        "name": "니켈",
+        "imgurl": ""
+    },
+    {
+        "name": "구리",
+        "imgurl": ""
+    },
+    {
+        "name": "아연",
+        "imgurl": ""
+    },
+    {
+        "name": "갈륨",
+        "imgurl": ""
+    },
+    {
+        "name": "게르마늄",
+        "imgurl": ""
+    },
+    {
+        "name": "비소",
+        "imgurl": ""
+    },
+    {
+        "name": "셀레늄",
+        "imgurl": ""
+    },
+    {
+        "name": "브로민",
+        "imgurl": ""
+    },
+    {
+        "name": "크립톤",
+        "imgurl": ""
+    },
+    {
+        "name": "루비듐",
+        "imgurl": ""
+    },
+    {
+        "name": "스트론튬",
+        "imgurl": ""
+    },
+    {
+        "name": "이트륨",
+        "imgurl": ""
+    },
+    {
+        "name": "지르코늄",
+        "imgurl": ""
+    },
+    {
+        "name": "나이오븀",
+        "imgurl": ""
+    },
+    {
+        "name": "몰리브데넘",
+        "imgurl": ""
+    },
+    {
+        "name": "테크네튬",
+        "imgurl": ""
+    },
+    {
+        "name": "루테늄",
+        "imgurl": ""
+    },
+    {
+        "name": "로듐",
+        "imgurl": ""
+    },
+    {
+        "name": "팔라듐",
+        "imgurl": ""
+    },
+    {
+        "name": "은",
+        "imgurl": ""
+    },
+    {
+        "name": "카드뮴",
+        "imgurl": ""
+    },
+    {
+        "name": "인듐",
+        "imgurl": ""
+    },
+    {
+        "name": "주석",
+        "imgurl": ""
+    },
+    {
+        "name": "안티몬",
+        "imgurl": ""
+    },
+    {
+        "name": "텔루륨",
+        "imgurl": ""
+    },
+    {
+        "name": "아이오딘",
+        "imgurl": ""
+    },
+    {
+        "name": "제논",
+        "imgurl": ""
+    },
+    {
+        "name": "세슘",
+        "imgurl": ""
+    },
+    {
+        "name": "바륨",
+        "imgurl": ""
+    },
+    {
+        "name": "란타넘",
+        "imgurl": ""
+    },
+    {
+        "name": "세륨",
+        "imgurl": ""
+    },
+    {
+        "name": "프라세오디뮴",
+        "imgurl": ""
+    },
+    {
+        "name": "네오디뮴",
+        "imgurl": ""
+    },
+    {
+        "name": "프로메튬",
+        "imgurl": ""
+    },
+    {
+        "name": "사마륨",
+        "imgurl": ""
+    },
+    {
+        "name": "유로퓸",
+        "imgurl": ""
+    },
+    {
+        "name": "가돌리늄",
+        "imgurl": ""
+    },
+    {
+        "name": "터븀",
+        "imgurl": ""
+    },
+    {
+        "name": "디스프로슘",
+        "imgurl": ""
+    },
+    {
+        "name": "홀뮴",
+        "imgurl": ""
+    },
+    {
+        "name": "어븀",
+        "imgurl": ""
+    },
+    {
+        "name": "툴륨",
+        "imgurl": ""
+    },
+    {
+        "name": "이터븀",
+        "imgurl": ""
+    },
+    {
+        "name": "루테튬",
+        "imgurl": ""
+    },
+    {
+        "name": "하프늄",
+        "imgurl": ""
+    },
+    {
+        "name": "탄탈럼",
+        "imgurl": ""
+    },
+    {
+        "name": "텅스텐",
+        "imgurl": ""
+    },
+    {
+        "name": "레늄",
+        "imgurl": ""
+    },
+    {
+        "name": "오스뮴",
+        "imgurl": ""
+    },
+    {
+        "name": "이리듐",
+        "imgurl": ""
+    },
+    {
+        "name": "백금",
+        "imgurl": ""
+    },
+    {
+        "name": "금",
+        "imgurl": ""
+    },
+    {
+        "name": "수은",
+        "imgurl": ""
+    },
+    {
+        "name": "탈륨",
+        "imgurl": ""
+    },
+    {
+        "name": "납",
+        "imgurl": ""
+    },
+    {
+        "name": "비스무트",
+        "imgurl": ""
+    },
+    {
+        "name": "폴로늄",
+        "imgurl": ""
+    },
+    {
+        "name": "아스타틴",
+        "imgurl": ""
+    },
+    {
+        "name": "라돈",
+        "imgurl": ""
+    },
+    {
+        "name": "프랑슘",
+        "imgurl": ""
+    },
+    {
+        "name": "라듐",
+        "imgurl": ""
+    },
+    {
+        "name": "악티늄",
+        "imgurl": ""
+    },
+    {
+        "name": "토륨",
+        "imgurl": ""
+    },
+    {
+        "name": "프로트악티늄",
+        "imgurl": ""
+    },
+    {
+        "name": "우라늄",
+        "imgurl": ""
+    },
+    {
+        "name": "넵투늄",
+        "imgurl": ""
+    },
+    {
+        "name": "플루토늄",
+        "imgurl": ""
+    },
+    {
+        "name": "아메리슘",
+        "imgurl": ""
+    },
+    {
+        "name": "퀴륨",
+        "imgurl": ""
+    },
+    {
+        "name": "버클륨",
+        "imgurl": ""
+    },
+    {
+        "name": "캘리포늄",
+        "imgurl": ""
+    },
+    {
+        "name": "아인슈타이늄",
+        "imgurl": ""
+    },
+    {
+        "name": "페르뮴",
+        "imgurl": ""
+    },
+    {
+        "name": "멘델레븀",
+        "imgurl": ""
+    },
+    {
+        "name": "노벨륨",
+        "imgurl": ""
+    },
+    {
+        "name": "로렌슘",
+        "imgurl": ""
+    },
+    {
+        "name": "러더포듐",
+        "imgurl": ""
+    },
+    {
+        "name": "더브늄",
+        "imgurl": ""
+    },
+    {
+        "name": "시보귬",
+        "imgurl": ""
+    },
+    {
+        "name": "보륨",
+        "imgurl": ""
+    },
+    {
+        "name": "하슘",
+        "imgurl": ""
+    },
+    {
+        "name": "마이트너륨",
+        "imgurl": ""
+    },
+    {
+        "name": "다름슈타튬",
+        "imgurl": ""
+    },
+    {
+        "name": "뢴트게늄",
+        "imgurl": ""
+    },
+    {
+        "name": "코페르니슘",
+        "imgurl": ""
+    },
+    {
+        "name": "니호늄",
+        "imgurl": ""
+    },
+    {
+        "name": "플레로븀",
+        "imgurl": ""
+    },
+    {
+        "name": "모스코븀",
+        "imgurl": ""
+    },
+    {
+        "name": "리버모륨",
+        "imgurl": ""
+    },
+    {
+        "name": "테네신",
+        "imgurl": ""
+    },
+    {
+        "name": "오가네손",
+        "imgurl": ""
+    }
+]

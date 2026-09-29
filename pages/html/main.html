@@ -1,0 +1,355 @@
+<main class="game_home">
+
+    <!-- =========================
+         플레이어 정보
+    ========================== -->
+    <section class="userinfo">
+
+        <div class="profile">
+
+            <div class="profile_image">
+                <img
+                    src="/image/default-profile.png"
+                    alt="플레이어 프로필"
+                    data-profile-image
+                >
+            </div>
+
+            <div class="profile_name">
+                <span>PLAYER</span>
+                <strong data-player-name>플레이어 닉네임</strong>
+            </div>
+
+        </div>
+
+
+        <div class="player_status">
+
+            <div class="status_item">
+                <span class="status_label">LEVEL</span>
+                <strong data-player-level>LV. 32</strong>
+            </div>
+
+
+            <!-- HP -->
+            <div class="status_item">
+
+                <div class="status_title">
+                    <span>HP</span>
+
+                    <span>
+                        <strong data-hp>100</strong>
+                        /
+                        <span data-max-hp>100</span>
+                    </span>
+                </div>
+
+                <div class="status_bar hp">
+                    <div
+                        class="status_value"
+                        data-hp-bar
+                        style="width: 100%;">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- MP -->
+            <div class="status_item">
+
+                <div class="status_title">
+                    <span>MP</span>
+
+                    <span>
+                        <strong data-mp>100</strong>
+                        /
+                        <span data-max-mp>100</span>
+                    </span>
+                </div>
+
+                <div class="status_bar mp">
+                    <div
+                        class="status_value"
+                        data-mp-bar
+                        style="width: 100%;">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         착용 장비
+    ========================== -->
+    <section class="equipment">
+
+        <div class="title">
+
+            <div>
+                <span class="section_number">01</span>
+                <h2>착용 장비</h2>
+            </div>
+
+            <button
+                type="button"
+                data-open-equipment>
+                장비창으로 가기
+            </button>
+
+        </div>
+
+
+        <div class="equipment_list">
+
+            <ul>
+
+                <!-- 무기 -->
+                <li
+                    class="wrap_item"
+                    data-slot="weapon">
+
+                    <span class="item_type">
+                        WEAPON
+                    </span>
+
+                    <div class="item_image">
+                        <!-- 아이템 이미지 -->
+                    </div>
+
+                </li>
+
+
+                <!-- 헬멧 -->
+                <li
+                    class="wrap_item"
+                    data-slot="helmet">
+
+                    <span class="item_type">
+                        HELMET
+                    </span>
+
+                    <div class="item_image">
+                    </div>
+
+                </li>
+
+
+                <!-- 상의 -->
+                <li
+                    class="wrap_item"
+                    data-slot="armor">
+
+                    <span class="item_type">
+                        ARMOR
+                    </span>
+
+                    <div class="item_image">
+                    </div>
+
+                </li>
+
+
+                <!-- 장갑 -->
+                <li
+                    class="wrap_item"
+                    data-slot="gloves">
+
+                    <span class="item_type">
+                        GLOVES
+                    </span>
+
+                    <div class="item_image">
+                    </div>
+
+                </li>
+
+
+                <!-- 신발 -->
+                <li
+                    class="wrap_item"
+                    data-slot="boots">
+
+                    <span class="item_type">
+                        BOOTS
+                    </span>
+
+                    <div class="item_image">
+                    </div>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         인벤토리 미리보기
+    ========================== -->
+    <section class="inventory">
+
+        <div class="title">
+
+            <div>
+                <span class="section_number">02</span>
+                <h2>인벤토리</h2>
+            </div>
+
+            <button
+                type="button"
+                data-open-inventory>
+                인벤토리창으로 가기
+            </button>
+
+        </div>
+
+
+        <!-- 카테고리 -->
+        <nav class="inventory_category">
+
+            <button
+                type="button"
+                class="active"
+                data-category="equipment">
+                장비
+            </button>
+
+            <button
+                type="button"
+                data-category="consumable">
+                소모품
+            </button>
+
+            <button
+                type="button"
+                data-category="material">
+                재료
+            </button>
+
+            <button
+                type="button"
+                data-category="etc">
+                기타
+            </button>
+
+        </nav>
+
+
+        <!-- 아이템 목록 -->
+        <div
+            class="inventory_items"
+            data-inventory-items>
+
+            <!-- 아이템 -->
+
+            <button
+                type="button"
+                class="inventory_item"
+                data-item-id="1">
+
+                <div class="item_image">
+
+                    <img
+                        src="/image/item/sample.png"
+                        alt="아이템"
+                    >
+
+                </div>
+
+                <div class="item_info">
+
+                    <strong class="item_name">
+                        아이템 이름
+                    </strong>
+
+                    <span class="item_quantity">
+                        x10
+                    </span>
+
+                </div>
+
+            </button>
+
+
+            <!-- 빈 슬롯 -->
+
+            <div class="inventory_slot empty">
+            </div>
+
+            <div class="inventory_slot empty">
+            </div>
+
+            <div class="inventory_slot empty">
+            </div>
+
+            <div class="inventory_slot empty">
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         캐릭터 정보
+    ========================== -->
+    <section class="character_info">
+
+        <div class="title">
+
+            <div>
+                <span class="section_number">03</span>
+                <h2>캐릭터 정보</h2>
+            </div>
+
+        </div>
+
+
+        <div class="character_stats">
+
+            <div class="stat">
+                <span>공격력</span>
+                <strong data-attack>120</strong>
+            </div>
+
+            <div class="stat">
+                <span>방어력</span>
+                <strong data-defense>85</strong>
+            </div>
+
+            <div class="stat">
+                <span>이동속도</span>
+                <strong data-speed>100</strong>
+            </div>
+
+            <div class="stat">
+                <span>작업 효율</span>
+                <strong data-efficiency>100%</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <link
+        rel="stylesheet"
+        href="/css/home.css"
+    >
+
+    <script
+        src="/js/home.js"
+        defer>
+    </script>
+
+</main>
