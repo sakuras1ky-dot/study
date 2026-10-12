@@ -4,7 +4,6 @@
 이에 틀림이 없음을 명시 합니다.
 
 본 팀정보는 소프트오아시스 홈페이지에서 보실수 있습니다.
-https://www.softoasis.org/partners
 
 
 
