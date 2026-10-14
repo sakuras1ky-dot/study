@@ -18,7 +18,7 @@
     </div>
     <div align= "center">
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🧑‍💻 Contact me </h2> <br> 
-    <div align= "center"> <a href=https://hyeokseob-cloud.notion.site/HYEOKSEOB-bc4ea017bb1f83f3ab0b813904de4119?source=copy_link> <img src="https://img.shields.io/badge/Notion-000000?style=plastic&logo=Notion&logoColor=white&link=https://hyeokseob-cloud.notion.site/HYEOKSEOB-bc4ea017bb1f83f3ab0b813904de4119?source=copy_link"> </a>
+    <div align= "center"> <a href=[https://hyeokseob-cloud.notion.site/HYEOKSEOB-bc4ea017bb1f83f3ab0b813904de4119?source=copy_lin](https://whitecloud1.notion.site/?source=copy_link)k> <img src="https://img.shields.io/badge/Notion-000000?style=plastic&logo=Notion&logoColor=white&link=https://hyeokseob-cloud.notion.site/HYEOKSEOB-bc4ea017bb1f83f3ab0b813904de4119?source=copy_link"> </a>
          <a href=mailto:sakuras1ky@naver.com> <img src="/logo/naver-logo.png"> </a>
           <div align= "center"> <a href=https://discord.gg/> <img src="https://img.shields.io/badge/Discord-5865F2?style=plastic&logo=Discord&logoColor=white"> </a>
           </div>  <br> 
