@@ -4,7 +4,7 @@
     </div>
     <div align= "center"> 
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> About Me </h2>  
-    <div style="font-weight: 700; font-size: 15px; text-align: center; color: #282d33;"> <li>항공정비를 배운 영상편집자입니다. </div> 
+    <div style="font-weight: 700; font-size: 15px; text-align: center; color: #282d33;"> <li>안녕하세요, 자갈치입니다. </div> 
     </div>
       <!-- 테크 기술 소스 이미지/링크 -->
     <div align= "center">
